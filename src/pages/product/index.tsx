@@ -10,6 +10,8 @@ const ProductList = ({ robots, addToCart }: ProductListProps) => {
 		return <RobotCard key={robot.id} addToCart={addToCart} robot={robot} />
 	}
 
+
+
 	return <div className="flex flex-wrap">{robots.map(renderItem)}</div>
 }
 
